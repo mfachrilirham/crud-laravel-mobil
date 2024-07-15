@@ -13,13 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        // $middleware->group('admin', [
-        //     AdminMiddleware::class,
-        // ]);
-
-        // $middleware->group('user', [
-        //     UserMiddleware::class,
-        // ]);
+        //
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
